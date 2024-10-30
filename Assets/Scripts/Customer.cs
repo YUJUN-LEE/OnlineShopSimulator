@@ -12,10 +12,14 @@ public class Customer : MonoBehaviour
     public int randomOrderNum; //주문할 아이템 수량
 
     //주문 가능한 아이템ID 리스트
-    private List<int> inventoryItemIDs = new List<int>();
+    public List<int> inventoryItemIDs = new List<int>();
+
+    //주문할 아이템ID 리스트
+    public List<int> selectedItemIDs = new List<int>(); 
 
     private void Awake() {
         foreach (var item in inventory.items.Values) {
+            //현재 내가 가지고 있는 아이템에서 주문하기
             if (!inventoryItemIDs.Contains(item.itemData.itemID)) {
                 inventoryItemIDs.Add(item.itemData.itemID);
             }
@@ -42,11 +46,9 @@ public class Customer : MonoBehaviour
         }
     }
 
-    public void Order() {
-        List<int> selectedItemIDs = new List<int>(); //주문할 아이템ID 리스트
-
+    public void SetSelectedItemIDs() {
         //인벤토리에서 최대 3개의 고유한 아이템 ID를 무작위로 선택
-        if (inventoryItemIDs.Count > 0) {
+        if (inventoryItemIDs.Count > 2) {
             for (int i = 0 ; i < 3 ; i++) {
                 int randomIndex = Random.Range(0, inventoryItemIDs.Count);
                 int selectedID = inventoryItemIDs[randomIndex];
@@ -58,16 +60,17 @@ public class Customer : MonoBehaviour
         else {
             selectedItemIDs.AddRange(inventoryItemIDs);
         }
+    }
 
-        //수량에 맞춰서 주문하기
+    public void Order() {
+        SetSelectedItemIDs();
+
+        //주문할 아이템 리스트를 보고 주문하기
         if (selectedItemIDs.Count > 0) {
             foreach (int itemID in selectedItemIDs) {
-                //InventoryItem item = inventory.items[itemID];
-                //int orderAmount = Mathf.Clamp(
-                //    Random.Range(minOrderAmount, item.itemData.itemMaxStack + 1),
-                //    minOrderAmount,
-                //    item.itemData.itemMaxStack
-                //);
+                //TODO: 주문할 아이템 리스트는 만들었으니까 모니터에 주문 리스트를 출력시키기
+                //TODO: 리스트가 다 완성됬으니까 알림 메시지를 화면에 출력하기
+                Debug.Log($"itemID : {itemID}");
             }
         }
         else {
