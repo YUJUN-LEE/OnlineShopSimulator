@@ -17,6 +17,9 @@ public class Customer : MonoBehaviour
     //주문할 아이템ID 리스트
     public List<int> selectedItemIDs = new List<int>(); 
 
+    //모니터
+    public Monitor monitor;
+
     private void Awake() {
         foreach (var item in inventory.items.Values) {
             //현재 내가 가지고 있는 아이템에서 주문하기
@@ -68,13 +71,19 @@ public class Customer : MonoBehaviour
         //주문할 아이템 리스트를 보고 주문하기
         if (selectedItemIDs.Count > 0) {
             foreach (int itemID in selectedItemIDs) {
-                //TODO: 주문할 아이템 리스트는 만들었으니까 모니터에 주문 리스트를 출력시키기
-                //TODO: 리스트가 다 완성됬으니까 알림 메시지를 화면에 출력하기
+                //주문할 아이템 리스트는 만들었으니까 모니터에 주문 리스트를 출력시키기
+                monitor.SetsaleItemIDs(selectedItemIDs);
+                //리스트가 다 완성됬으니까 알림 메시지를 화면에 출력하기
                 Debug.Log($"itemID : {itemID}");
             }
         }
         else {
             Debug.Log("selectedItemIDs is zero");
         }
+    }
+
+    public void MakeReview() {
+        //TODO: 주문 이후 배송까지 걸린 시간, 주문 물품 배송 상태 확인을 기준으로 리뷰 작성
+        //TODO: 리뷰에 따라 다음날의 주문 수 증감
     }
 }
