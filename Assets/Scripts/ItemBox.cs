@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ItemBox : Interactable 
 {
+    // 아이템 시각화용
+
     public override void Interact() {
         Debug.Log($"{interactableName} is interacted");
 
