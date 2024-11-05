@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     float playerMoney;
     float playerExp;
     int skillPoint;
+
     
     public bool CheckInventory(Shelf shelf)
     {

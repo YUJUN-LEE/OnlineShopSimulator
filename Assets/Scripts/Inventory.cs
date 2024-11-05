@@ -1,35 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEditor.Progress;
 using static UnityEngine.EventSystems.EventTrigger;
 
 public class Inventory : MonoBehaviour
 {
     public Dictionary<int, InventoryItem> items; //아이디랑 item
+    public int UIDCounter = 1;
 
     public Inventory() {
         items = new Dictionary<int, InventoryItem>();
     }
 
-    //TODO: 나중에 json파일로 유저 데이터 관리하면 일단 초기화를 여기서 하는걸로
-    //private void Awake() {
-    //    items = new Dictionary<int, InventoryItem>();
-    //}
-
     public void TryAddItem(Item itemData, int itemAmount = 0) {
-        if (itemData != null) {
-            if (items.ContainsKey(itemData.itemID)) {
-                StackItem(itemData.itemID, itemAmount);
-                Debug.Log($"itemData.itemID : {itemData.itemID} is Stacked");
-                Debug.Log($"now itemAmount is : {itemAmount}");
-            }
-            else {
-                AddedItem(itemData, itemAmount);
-                Debug.Log($"new item is itemData.itemID : {itemData.itemID}, itemAmount is : {itemAmount}");
-            }
+        if (itemData == null) {
+            Debug.Log("itemData is null");
+            return;
+        }
+
+        if (items.ContainsKey(itemData.itemID) && items[itemData.itemID].itemAmount < 64) {
+            StackItem(itemData.itemID, itemAmount);
+            Debug.Log($"itemData.itemID : {itemData.itemID} is Stacked, now itemAmount is : {items[itemData.itemID].itemAmount}");
         }
         else {
-            Debug.Log("itemData is null");
+            AddedItem(itemData, itemAmount);
+            Debug.Log($"new item added - itemID : {itemData.itemID}, itemAmount : {itemAmount}");
         }
     }
 
@@ -37,8 +33,12 @@ public class Inventory : MonoBehaviour
         items[itemID].itemAmount += itemAmount;
     }
 
-    public void AddedItem(Item itemData, int itemAmount = 0) {
-        items.Add(itemData.itemID, new InventoryItem(itemData, itemAmount));
+    public void AddedItem(Item itemData, int itemAmount = 0, int itemUID = 0) {
+        items.Add(itemData.itemID, new InventoryItem(itemData, itemAmount, MakeUID()));
+    }
+
+    public int MakeUID() {
+        return UIDCounter++;
     }
 
     public void ShowInventoryItems() {
