@@ -8,7 +8,7 @@ public class Inventory : MonoBehaviour
 {
     public Dictionary<int, InventoryItem> items; //¾ÆÀÌµð¶û item
     public int UIDCounter = 0;
-
+    
     int inventoryItemMaxStack = GameManager.inventoryItemMaxStack;
 
     public Inventory() {

@@ -907,40 +907,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5547793404648804989, guid: c0376f38f6e735e48b8e9eec6ba3517c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 317140385}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c0376f38f6e735e48b8e9eec6ba3517c, type: 3}
 --- !u!4 &317140383 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7665621457201294293, guid: c0376f38f6e735e48b8e9eec6ba3517c, type: 3}
   m_PrefabInstance: {fileID: 317140382}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &317140384 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5547793404648804989, guid: c0376f38f6e735e48b8e9eec6ba3517c, type: 3}
-  m_PrefabInstance: {fileID: 317140382}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &317140385
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 317140384}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8d78520c6576f24f8f54b7e20d06a08, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactableName: 
-  Place1: {x: -0.24, y: 0.883, z: 0}
-  Place2: {x: 0.24, y: 0.883, z: 0}
-  Place3: {x: -0.24, y: 0.483, z: 0}
-  Place4: {x: 0.24, y: 0.483, z: 0}
-  Place5: {x: -0.24, y: 0.083, z: 0}
-  Place6: {x: 0.24, y: 0.083, z: 0}
 --- !u!1 &325779952
 GameObject:
   m_ObjectHideFlags: 0
@@ -2811,40 +2784,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5547793404648804989, guid: c0376f38f6e735e48b8e9eec6ba3517c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 803447482}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c0376f38f6e735e48b8e9eec6ba3517c, type: 3}
 --- !u!4 &803447480 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7665621457201294293, guid: c0376f38f6e735e48b8e9eec6ba3517c, type: 3}
   m_PrefabInstance: {fileID: 803447479}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &803447481 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5547793404648804989, guid: c0376f38f6e735e48b8e9eec6ba3517c, type: 3}
-  m_PrefabInstance: {fileID: 803447479}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &803447482
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 803447481}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8d78520c6576f24f8f54b7e20d06a08, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactableName: 
-  Place1: {x: 0, y: 0, z: 0}
-  Place2: {x: 0, y: 0, z: 0}
-  Place3: {x: 0, y: 0, z: 0}
-  Place4: {x: 0, y: 0, z: 0}
-  Place5: {x: 0, y: 0, z: 0}
-  Place6: {x: 0, y: 0, z: 0}
 --- !u!1 &807773265
 GameObject:
   m_ObjectHideFlags: 0
@@ -4500,40 +4446,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5547793404648804989, guid: c0376f38f6e735e48b8e9eec6ba3517c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1309735399}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c0376f38f6e735e48b8e9eec6ba3517c, type: 3}
 --- !u!4 &1309735397 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7665621457201294293, guid: c0376f38f6e735e48b8e9eec6ba3517c, type: 3}
   m_PrefabInstance: {fileID: 1309735396}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1309735398 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5547793404648804989, guid: c0376f38f6e735e48b8e9eec6ba3517c, type: 3}
-  m_PrefabInstance: {fileID: 1309735396}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1309735399
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1309735398}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8d78520c6576f24f8f54b7e20d06a08, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactableName: 
-  Place1: {x: 0, y: 0, z: 0}
-  Place2: {x: 0, y: 0, z: 0}
-  Place3: {x: 0, y: 0, z: 0}
-  Place4: {x: 0, y: 0, z: 0}
-  Place5: {x: 0, y: 0, z: 0}
-  Place6: {x: 0, y: 0, z: 0}
 --- !u!1 &1353575251
 GameObject:
   m_ObjectHideFlags: 0
@@ -5000,40 +4919,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5547793404648804989, guid: c0376f38f6e735e48b8e9eec6ba3517c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1401480712}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c0376f38f6e735e48b8e9eec6ba3517c, type: 3}
 --- !u!4 &1401480710 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7665621457201294293, guid: c0376f38f6e735e48b8e9eec6ba3517c, type: 3}
   m_PrefabInstance: {fileID: 1401480709}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1401480711 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5547793404648804989, guid: c0376f38f6e735e48b8e9eec6ba3517c, type: 3}
-  m_PrefabInstance: {fileID: 1401480709}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1401480712
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1401480711}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8d78520c6576f24f8f54b7e20d06a08, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactableName: 
-  Place1: {x: 0, y: 0, z: 0}
-  Place2: {x: 0, y: 0, z: 0}
-  Place3: {x: 0, y: 0, z: 0}
-  Place4: {x: 0, y: 0, z: 0}
-  Place5: {x: 0, y: 0, z: 0}
-  Place6: {x: 0, y: 0, z: 0}
 --- !u!1 &1403075181
 GameObject:
   m_ObjectHideFlags: 0

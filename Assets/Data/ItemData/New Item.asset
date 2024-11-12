@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9466dd7bb95fc74418576dc3db19efdb, type: 3}
   m_Name: New Item
   m_EditorClassIdentifier: 
-  itemID: 0
-  itemPrice: 0
-  itemName: 
-  itemMaxStack: 0
+  itemID: 1
+  itemPrice: 50
+  itemName: SmartPhone1
+  itemMaxStack: 64
   itemType: 0
   itemDescription: 
   itemIcon: {fileID: 0}

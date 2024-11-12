@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
     //    }
     //}
 
-    public bool CheckInventory(Shelf shelf)
+    public bool CheckInventory()
     {
         //TODO: 나중에 함수 이름 직관적으로 변경하기
 
